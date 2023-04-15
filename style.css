@@ -1,0 +1,838 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+
+header {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 75px;
+  font-family: "Poppins", sans-serif;
+  background-color: #b2c2e8;
+  /* background-color: #af64ec; */
+}
+
+.navbar ul {
+  float: right;
+  margin-left: 17px;
+}
+
+.navbar ul li {
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+
+.navbar img {
+  width: 181px;
+  height: 65px;
+  object-fit: cover;
+  margin-left: 98px;
+}
+
+.navbar ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 1px 3px;
+  position: relative;
+}
+
+.navbar ul a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.navbar ul a:hover::after {
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.nav-heading {
+  width: 18%;
+    font-size: 23px;
+  text-decoration: none;
+  color: black;
+}
+
+.mainbody {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  width: 98vw;
+  height: 50vh;
+  background-color: #000000;
+  color: #00abb3;
+  margin: 77px auto;
+}
+
+.mainbody h1 {
+  font-size: 45px;
+  color: #1aabb3;
+  margin-top: 20px;
+}
+
+.mainbody h2 {
+  font-size: 48px;
+  /* margin-top: 7px; */
+  color: #d3d7dc;
+}
+
+.burger {
+  /* float: right; */
+  display: none;
+  /* position: absolute; */
+  /* margin-right: 40px; */
+  cursor: pointer;
+}
+.line {
+  width: 25px;
+  background-color: black;
+  height: 4px;
+  margin: 3px 3px;
+}
+
+
+
+
+/* ===============================ABOUT SECTION============================= */
+.aboutsection {
+  border-radius: 85px;
+  background-color: #395b64;
+  padding: 48px;
+  max-width: 72%;
+  margin: auto;
+  color: white;
+  height: 80%;
+}
+
+.aboutsection h1 {
+  color: #cc9544;
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.aboutsection p {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+/* ======================ABOUT SECTION ENDS============================ */
+
+
+/* ==========================EVENT SECTION==================== */
+
+.events {
+  max-width: 90%;
+  background-color: rgb(0, 0, 0);
+  /* color: white; */
+  margin: 90px auto;
+}
+
+.events h1 {
+  display: flex;
+  justify-content: center;
+  color: #ffd7a7;
+  font-size: 40px;
+  background-color: #19376D;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 5px 5px 8px 0 rgba(253, 253, 253, 0.768); /* this adds the "card" effect */
+  color: white;
+  padding: 14px;
+  border-radius: 10px;
+  height: 250px;
+  text-align: center;
+  margin: 29px 10px;
+  background-color: #94ade8;
+}
+
+.card:hover {
+  background-color: #fdcb9e;
+}
+
+.card .event-heading {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card .date-heading {
+  color: black;
+  font-size: 15px;
+}
+.card img {
+  width: 115px;
+  height: 115px;
+  object-fit: cover;
+}
+
+.card button {
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bolder;
+  margin-top: 20px;
+  width: 130px;
+  height: 40px;
+  background-color: #c0eef2;
+  color: black;
+}
+
+.card button:hover {
+  box-shadow: 3px 3px 5px #5c6c92;
+  transform: translateY(-2px);
+}
+
+/* ==========================EVENT SECTION ENDS==================== */
+
+
+/* ======================FACULTY SECTION========================== */
+
+
+.fac-head-title{
+  color: #ffd7a7;
+  width: 90%;
+  margin: 0 auto ;
+  background-color: #19376D;
+  
+}
+
+.fac-container h1{
+  
+  text-align: center;
+  font-size: 40px;
+}
+
+.fac-spot{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+} 
+
+.fac-card{
+  width: 325px;
+  height: 370px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid rgb(255, 255, 255);
+  position: relative;
+}
+
+.fac-info{
+  text-decoration: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 0  auto;
+  margin-bottom: 20px;
+  color: black;
+  text-align: center;
+  background-color: white;
+}
+
+.fac-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fac-cardbody{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100% ;
+  position: absolute;
+  background: #1f3d47b4;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: rgb(234, 220, 220);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.4s ease-in;
+}
+
+.fac-card-title{
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #cc9544;
+  text-align: center;
+}
+
+.fac-cardbody p{
+  font-size: 14px;
+  padding: 10px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.fac-cardbody img{
+  position: relative;
+  left: 40%;
+  bottom: 8%;
+  scale: 0.8;
+  object-fit: contain;
+  height: 60px;
+  width: 60px;
+}
+
+.fac-card-info{
+  color: #1f3d47;
+  background: #8fabba;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  width: 120px;
+  margin: auto;
+}
+
+.fac-card:hover .fac-cardbody{
+  right: 0;
+}
+
+.gif-card{
+  width: 325px;
+    height: 370px;
+    border-radius: 20px;
+}
+
+.gif{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gif video{
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======================FACULTY SECTION ENDS========================== */
+
+
+/* ========================TEAM SECTION=============================== */
+
+
+
+
+.team-container{
+  margin-top: 15%;
+}
+
+.team-head-title{
+  text-align: center;
+  color: #ffd7a7;
+  width: 90%;
+  margin: 0 auto ;
+  background-color: #19376D;
+}
+
+.team-spot{
+  display: grid;
+  margin: 20px 130px;
+  grid-template-columns: repeat(3,1fr);
+  
+} 
+
+.team-card{
+  margin: 20px auto;
+  width: 293px;
+  height: 321px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid rgb(255, 255, 255);
+  position: relative;
+}
+
+.team-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-cardbody{
+  width: 100%;
+  height: 100%;
+  /* top: 0; */
+  top: 100% ;
+  position: absolute;
+  background: #1f3d47b4;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: rgb(234, 220, 220);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.4s ease-in;
+}
+
+.team-post{
+  /* margin-top: 5px; */
+  font-weight: bolder;
+  font-size: 30px;
+  color: #fad9a7;
+  text-align: center;
+} 
+
+.team-post-4{
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fad9a7;
+  text-align: center;
+}
+.team-post-5{
+  font-size: 22px;
+  font-weight: bolder;
+  color: #fad9a7;
+  text-align: center;
+}
+.team-post-6{
+  font-size: 22px;
+  font-weight: bolder;
+  color: #fad9a7;
+  text-align: center;
+}
+.team-post-7{
+  /* margin-top: 5px; */
+  font-size: 22px;
+  font-weight: bolder;
+  color: #fad9a7;
+  text-align: center;
+}
+.team-post-8{
+  /* margin-top: 5px; */
+  font-size: 22px;
+  font-weight: bolder;
+  color: #fad9a7;
+  text-align: center;
+}
+.team-post-9{
+  /* margin-top: 5px; */
+  font-size: 22px;
+  font-weight: bolder;
+  color: #fad9a7;
+  text-align: center;
+}
+.team-post-10{
+  /* margin-top: 5px; */
+  font-size: 22px;
+  font-weight: bolder;
+  color: #fad9a7;
+  text-align: center;
+}
+
+.team-card-title{
+  margin-top: 7px;
+  font-weight: bolder;
+  font-size: 24px;
+  color: #cc9544;
+  text-align: center;
+}
+
+
+
+.team-cardbody p{
+  font-size: 14px;
+  padding: 10px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.team-cardbody img{
+  position: relative;
+  left: 40%;
+  bottom: 8%;
+  scale: 0.8;
+  object-fit: contain;
+  height: 60px;
+  width: 60px;
+}
+
+.team-card-info{
+  font-size: 16px;
+  color: #1f3d47;
+  background: #8fabba;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  width: 120px;
+  margin: auto;
+}
+
+.team-card:hover .team-cardbody{
+  top: 0;
+}
+
+
+/* ========================TEAM SECTION ENDS=============================== */
+
+
+/* ======================CONTACT US======================= */
+
+
+.contact-container{
+  /* width: 100%; */
+  margin: 50px 0px 10px 0px;
+}
+
+.con-heading{
+  display: flex;    
+  /* width: 100%; */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 100px;
+  background-color: #19376D;
+}
+
+
+
+.contact-icons{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  height: 75px;
+  background-color: #101218;
+}
+
+.contact-icons img{
+  scale: 0.8;
+  /* border-radius: 20px;
+  background-color: white; */
+  height: 60px;
+  width: 60px;
+}
+
+.icon-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 39px;
+  width: 44px;
+  padding-top: 7px;
+  border-radius: 9px;
+  background-color: white;
+}
+
+
+.credits{
+  letter-spacing: 4px;
+  word-spacing: 8px;
+  display: flex;
+  /* width: 100%; */
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: #A5D7E8  ;
+  background-color: #19376D;
+
+}
+.credits h3{
+  font-weight: 50;
+}
+
+.web-tag{
+  font-weight: bolder;
+  color: black;
+  background-color: white;
+}
+
+
+
+
+/* ============================MEDIA TAGS=========================== */
+
+@media only screen and (max-width: 1245px) {
+  .navbar img{
+    width: 120px;
+    height: 55px;
+    margin-left: 0;
+  }
+
+  .nav-heading{
+    font-size: 19px;
+    width: 19%;
+  }
+
+  .navbar ul 
+  .navbar ul li a{
+    font-size: 15px;
+  }
+
+}
+
+
+@media only screen and (max-width: 1244px){
+  .navbar img{
+    width: 130px;
+    height: 85px;
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+/* ============================1024px========================= */
+@media only screen and (max-width:1024px) {
+
+  .fac-card{
+    width: 289px;
+    /* padding: 10px;  */
+    height: 334px;
+  }
+
+  .fac-card-title{
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .fac-card-content{
+    font-size: 13px;
+
+  }
+
+  .fac-info{
+    
+    margin-bottom: 30px;
+  }
+
+  .team-card{
+    width: 240px;
+    height: 280px;  
+    margin: 0 20px;
+    margin-top: 10px;
+  }
+
+  .team-spot{
+    grid-template-columns: repeat(3,1.5fr);
+    margin-left: 80px;
+  }
+
+  .team-post{
+    font-size: 33px;
+  }
+
+  .team-card-title{
+    margin-top: 1px;
+  }
+  
+  .card{ 
+  width: 130px;
+  }
+
+  .card img {
+    width: 96px;
+    height: 89px;
+  }
+
+  .card .event-heading{
+    font-size: 16px;
+  }
+
+  .navbar{
+    justify-content: space-between;
+  }
+
+  .navbar ul li{
+    margin: 0 0;
+  }
+
+  .navbar ul li a {
+    font-size: 15px;
+    padding: 1px 2px;
+  }
+}
+
+
+
+
+
+/* ===========================================952px-================================= */
+@media only screen and (max-width: 952px) {
+  .burger {
+    display: block;
+    float: right;
+    margin-right: 30px;
+  }
+
+  .navbar ul li a{
+    font-size: 25px ;
+  }
+
+  .navbar{
+    justify-content: space-between;
+  }
+
+  .navbar img{
+    width: 120px;
+    height: 80px;
+    margin-left: 0;
+  }
+  .navbar ul {
+    position: fixed;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 85vh;
+    top: 75px;
+    /* right: -100%; */
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    transition:  all 0.3s  ;
+
+  }
+
+  .navbar ul li{
+    display: block;
+  }
+
+  .nav-heading{
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+
+  .navbar ul li a{
+    font-size: 20px ;
+  }
+
+  .navbar ul li a:hover{
+    background-color: #00abb3 ;
+    
+  }
+  .navbar ul li a::after{
+    background: none;
+    
+  }
+
+  /* .h-rsp{
+    height: 75px;
+  } */
+
+  .navlist{
+    opacity: 0;
+    right: -100%;
+  }
+  
+ .navshow{
+  opacity: 1;
+  right: 0;
+ }
+
+ .team-spot {
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 20%;
+
+}
+}
+
+/* ===========================425px=========================== */
+@media only screen and (max-width:475px){
+
+  .nav-heading {
+    font-size: 17px;
+    margin-left: 8px;
+    width: 25%;
+  }
+
+  
+  .mainbody{
+    width: 149vw;
+    margin-bottom: 30px;
+  }
+  .mainbody h1{
+    font-size: 35px;
+  }
+  .mainbody h2{
+    font-size: 30px;
+  }
+
+  .aboutsection {
+    width: 80vw;
+    margin-left: 24%;
+  }
+  .aboutsection h1 {
+    font-size: 28px;
+    padding: 3px;
+  }
+
+  .aboutsection p {
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+
+.events h1 {
+  font-size: 30px;
+  margin: 0 0%;
+  width: 140vw;
+}
+
+.events{
+  width: 149vw;
+}
+
+
+
+}
